@@ -7,7 +7,7 @@ $blue: #0499ba;
 $darkblue: #007690;
 // $blue: $darkblue;
 $black: #251212;
-$white: #fcf8f8;
+$white: #f8fafc;
 // spacing
 $padding: 0.5em;
 $big-padding: 1.5em;
@@ -15,6 +15,7 @@ $margin: 1em;
 $font-size: 2rem;
 $big-font-size: 3.5rem;
 $jumbo-font-size: 10vw;
+$max-width: 700px;
 
 //some 3d shit
 $the-line: solid 4px $darkblue;
@@ -30,14 +31,6 @@ $side-bar-width: 200px;
   @return $string;
 }
 // mixins
-@mixin alpha-color {
-  background: mix($bc, white, 80%);
-  color: #fff;
-}
-@mixin sq($size) {
-  width: $size;
-  height: $size;
-}
 @mixin bg-border($color) {
   background-color: $color;
   border-color: mix($color, black, 50%);
