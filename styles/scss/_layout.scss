@@ -63,6 +63,9 @@ section.panos {
     max-width: $max-width;
     padding: $padding;
     font-size: $big-font-size;
+    p {
+      line-height: 1.6;
+    }
     &.first {
       p {
         text-transform: uppercase;
@@ -75,10 +78,11 @@ section.glyphs {
     //maybe this for mobile
     // overflow: scroll;
     // width: 100vw;
-    // margin-left: -#{$margin};
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
     gap: 1rem;
+    max-width: calc(#{$max-width}* 2);
+    margin: 0 auto;
     perspective: $perspective;
     li {
       transition: 0.5s;
@@ -97,4 +101,5 @@ section.glyphs {
   }
 }
 footer {
+  @include bg-pattern($red);
 }
