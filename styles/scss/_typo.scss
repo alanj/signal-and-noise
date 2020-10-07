@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "signal-and-noise";
+  src: url("./../fonts/SingnalAndNoise.ttf");
+}
+@font-face {
+  font-family: "your-face-in-deep-space";
+  src: url("./../fonts/YourFaceInDeepSpace.ttf");
+}
+@font-face {
+  font-family: "manrope";
+  //src: url("./../fonts/Manrope[wght].ttf ");
+  src: url("./../fonts/manrope/web/Manrope-Regular.woff");
+}
+html {
+  font-size: 62.5%;
+}
+body,
+text,
+input,
+textarea,
+button {
+  font-size: $font-size;
+  line-height: 1.2;
+  font-family: "signal-and-noise";
+  // font-family: "manrope";
+  // font-family: "your-face-in-deep-space";
+}
+.manrope {
+  // font-family: "manrope", sans-serif;
+  // line-height: 1.4;
+}
+a {
+  color: adjust-color($color: $red, $saturation: -40%, $lightness: 00%);
+  display: inline-block;
+  text-decoration: none;
+  &:hover {
+    color: $red;
+  }
+  &:active {
+    transition: 0.1s;
+    transform: translateY(1px);
+  }
+}
+*::selection {
+  background: $red;
+  color: $blue;
+}
