@@ -13,7 +13,7 @@ header {
   h1 {
     font-size: $big-font-size;
     color: $white;
-    font-size: $jumbo-font-size;
+    font-size: $title-font-size;
     text-align: center;
     padding: $padding;
   }
@@ -27,6 +27,7 @@ header {
   }
   .download {
     text-align: center;
+    padding: $big-padding;
     button {
       transition: 0.2s;
       @include bg-border($red);
@@ -75,31 +76,30 @@ section.panos {
 }
 section.glyphs {
   ul {
-    //maybe this for mobile
-    // overflow: scroll;
-    // width: 100vw;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
     gap: 1rem;
     max-width: calc(#{$max-width}* 2);
     margin: 0 auto;
-    perspective: $perspective;
     li {
       transition: 0.5s;
-      font-size: $big-font-size;
+      font-size: $jumbo-font-size;
       border: solid 1px mix($white, black, 90%);
       background: $white;
       border-radius: 5px;
       padding: $padding;
       text-align: center;
-      transform: translateZ(-5px);
       &:hover {
-        transform: translateZ(0);
         background: #fff;
       }
     }
   }
 }
 footer {
+  p {
+    color: $white;
+    max-width: $max-width;
+    margin: 0 auto;
+  }
   @include bg-pattern($red);
 }

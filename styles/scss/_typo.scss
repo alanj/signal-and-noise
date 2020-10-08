@@ -16,11 +16,12 @@ button {
   font-family: "signal-and-noise";
 }
 a {
-  color: adjust-color($color: $red, $saturation: -40%, $lightness: 00%);
+  color: darken($white, 10%);
   display: inline-block;
-  text-decoration: none;
+  // text-decoration: none;
   &:hover {
-    color: $red;
+    // color: $white;
+    text-decoration: none;
   }
   &:active {
     transition: 0.1s;
