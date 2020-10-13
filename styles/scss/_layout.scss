@@ -25,6 +25,12 @@ header {
     color: $white;
     padding: $big-padding;
   }
+  .update {
+    color: $white;
+    text-align: center;
+    font-size: $small-font-size;
+    text-transform: uppercase;
+  }
   .download {
     text-align: center;
     padding: $big-padding;
@@ -69,7 +75,7 @@ section.panos {
     }
     &.first {
       p {
-        text-transform: uppercase;
+        // text-transform: uppercase;
       }
     }
   }
@@ -93,6 +99,56 @@ section.glyphs {
         background: #fff;
       }
     }
+  }
+}
+section.waterfall {
+  width: 100vw;
+  overflow-x: scroll;
+  p {
+    width: 1350px;
+  }
+  p.fsize {
+    font-size: $small-font-size;
+    margin-top: $margin;
+    position: sticky;
+    left: 0;
+    width: auto;
+  }
+  p.f96 {
+    font-size: 96px;
+  }
+  p.f72 {
+    font-size: 72px;
+  }
+  p.f60 {
+    font-size: 60px;
+  }
+  p.f55 {
+    font-size: 55px;
+  }
+  p.f48 {
+    font-size: 48px;
+  }
+  p.f36 {
+    font-size: 36px;
+  }
+  p.f28 {
+    font-size: 28px;
+  }
+  p.f24 {
+    font-size: 24px;
+  }
+  p.f20 {
+    font-size: 20px;
+  }
+  p.f16 {
+    font-size: 16px;
+  }
+  p.f10 {
+    font-size: 10px;
+  }
+  p.f8 {
+    font-size: 8px;
   }
 }
 footer {

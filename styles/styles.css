@@ -453,7 +453,7 @@ textarea {
 
 @font-face {
   font-family: "signal-and-noise";
-  src: url("./../fonts/SingnalAndNoise.ttf");
+  src: url("./../fonts/SignalAndNoise.ttf");
 }
 html {
   font-size: 62.5%;
@@ -520,6 +520,12 @@ header .about {
   color: #f8fafc;
   padding: 1.5em;
 }
+header .update {
+  color: #f8fafc;
+  text-align: center;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
 header .download {
   text-align: center;
   padding: 1.5em;
@@ -565,10 +571,6 @@ section.panos .panograms {
 section.panos .panograms p {
   line-height: 1.6;
 }
-section.panos .panograms.first p {
-  text-transform: uppercase;
-}
-
 section.glyphs ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
@@ -587,6 +589,57 @@ section.glyphs ul li {
 }
 section.glyphs ul li:hover {
   background: #fff;
+}
+
+section.waterfall {
+  width: 100vw;
+  overflow-x: scroll;
+}
+section.waterfall p {
+  width: 1350px;
+}
+section.waterfall p.fsize {
+  font-size: 1.7rem;
+  margin-top: 1em;
+  position: sticky;
+  left: 0;
+  width: auto;
+}
+section.waterfall p.f96 {
+  font-size: 96px;
+}
+section.waterfall p.f72 {
+  font-size: 72px;
+}
+section.waterfall p.f60 {
+  font-size: 60px;
+}
+section.waterfall p.f55 {
+  font-size: 55px;
+}
+section.waterfall p.f48 {
+  font-size: 48px;
+}
+section.waterfall p.f36 {
+  font-size: 36px;
+}
+section.waterfall p.f28 {
+  font-size: 28px;
+}
+section.waterfall p.f24 {
+  font-size: 24px;
+}
+section.waterfall p.f20 {
+  font-size: 20px;
+}
+section.waterfall p.f16 {
+  font-size: 16px;
+}
+section.waterfall p.f10 {
+  font-size: 10px;
+}
+section.waterfall p.f8 {
+  font-size: 8px;
 }
 
 footer {
