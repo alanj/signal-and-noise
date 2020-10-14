@@ -15,13 +15,14 @@ section {
 }
 .download {
   text-align: center;
-  button {
+  .button {
     transition: 0.2s;
     color: $white;
     padding: 1rem 2rem;
     margin: 0 auto;
     font-size: $big-font-size;
     transform: skewY(-2deg) translateY(-2px);
+    text-decoration: none;
     &:hover {
       transform: skewY(-2deg) translateY(-4px);
     }
@@ -50,7 +51,7 @@ header {
   }
   .download {
     padding: $big-padding;
-    button {
+    .button {
       @include bg-border($red);
       color: $white;
       &:hover {
@@ -156,7 +157,7 @@ section.waterfall {
 footer {
   .download {
     padding: $padding;
-    button {
+    .button {
       @include bg-border($blue);
       color: $white;
       &:hover {
