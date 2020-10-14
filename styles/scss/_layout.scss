@@ -8,46 +8,48 @@ footer,
 section {
   padding: $big-padding;
 }
+.download {
+  text-align: center;
+  button {
+    transition: 0.2s;
+    color: $white;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    font-size: $big-font-size;
+    transform: skewY(-2deg) translateY(-2px);
+    &:hover {
+      transform: skewY(-2deg) translateY(-4px);
+    }
+    &:active {
+      transform: skewY(-2deg) translateY(0);
+    }
+  }
+}
 header {
   @include bg-pattern($darkblue);
   h1 {
-    font-size: $big-font-size;
     color: $white;
     font-size: $title-font-size;
     text-align: center;
     padding: $padding;
   }
   .about {
-    max-width: $max-width;
-    text-align: justify;
+    li {
+      display: inline-block;
+    }
+    text-align: center;
     margin: 0 auto;
+    max-width: $max-width;
     font-size: $font-size;
     color: $white;
-    padding: $big-padding;
-  }
-  .update {
-    color: $white;
-    text-align: center;
-    font-size: $small-font-size;
-    text-transform: uppercase;
   }
   .download {
-    text-align: center;
     padding: $big-padding;
     button {
-      transition: 0.2s;
       @include bg-border($red);
       color: $white;
-      padding: 1rem 2rem;
-      margin: 0 auto;
-      font-size: $big-font-size;
-      transform: skewY(-2deg) translateY(-2px);
       &:hover {
-        transform: skewY(-2deg) translateY(-4px);
         @include bg-border(mix($red, white, 90%));
-      }
-      &:active {
-        transform: skewY(-2deg) translateY(0);
       }
     }
   }
@@ -102,7 +104,8 @@ section.glyphs {
   }
 }
 section.waterfall {
-  width: 100vw;
+  margin: 0 auto;
+  max-width: calc(#{$max-width}* 2);
   overflow-x: scroll;
   p {
     width: 1350px;
@@ -152,8 +155,19 @@ section.waterfall {
   }
 }
 footer {
+  .download {
+    padding: $padding;
+    button {
+      @include bg-border($blue);
+      color: $white;
+      &:hover {
+        @include bg-border(mix($blue, white, 90%));
+      }
+    }
+  }
   p {
     color: $white;
+    text-align: center;
     max-width: $max-width;
     margin: 0 auto;
   }

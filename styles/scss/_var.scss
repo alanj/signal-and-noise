@@ -44,11 +44,11 @@ $perspective: 2cm;
   background-attachment: fixed;
 }
 // media queries n shit
-// @mixin for-phone-only {
-//   @media (max-width: 599px) {
-//     @content;
-//   }
-// }
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
 // @mixin for-tablet-portrait-up {
 //   @media (min-width: 600px) {
 //     @content;

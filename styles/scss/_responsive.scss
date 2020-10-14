@@ -1,0 +1,29 @@
+@include for-phone-only {
+  header {
+    h1 {
+      font-size: $big-font-size;
+    }
+    ul.about {
+      width: 60vw;
+      margin: 0 auto;
+      text-align: left;
+      list-style: square;
+      li {
+        display: list-item;
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+  section.glyphs {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+      gap: 1rem;
+      li {
+        font-size: $font-size;
+      }
+    }
+  }
+}
