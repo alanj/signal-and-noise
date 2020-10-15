@@ -105,10 +105,10 @@ section.glyphs {
 }
 section.waterfall {
   margin: 0 auto;
-  max-width: calc(#{$max-width}* 2);
+  max-width: 1480px;
   overflow-x: scroll;
   p {
-    width: 1350px;
+    width: 1415px;
   }
   p.fsize {
     font-size: $small-font-size;
